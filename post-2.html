@@ -23,6 +23,9 @@
 <div id="app">
   <h3>{{message}}</h3>
   <p>The abobe message is coming from vue.</p>
+  <br/>
+  <button @click="count++">Click me</button>
+  <p>Increase by 1 : {{count}}</p>
 </div>
 
 
@@ -33,6 +36,7 @@
     data(){
       return {
         message: 'Welcome to vue app.'
+        count: 0
       }
     }
   })
